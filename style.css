@@ -1,0 +1,270 @@
+/* RentCar - custom styles on top of Bootstrap 5 */
+
+/* fonts (local files in /fonts) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Young Serif";
+  src: url("fonts/YoungSerif-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Young Serif";
+  src: url("fonts/YoungSerif-Regular.ttf") format("truetype");
+  font-weight: 700;
+}
+
+/* colours */
+:root {
+  --rc-blue: #2f52c7;
+  --rc-blue-dark: #2443a8;
+  --rc-navy: #0e1a38;
+  --rc-tint: #dfe9fb;
+  --rc-tint-2: #e8f0fe;
+}
+
+/* typography */
+body {
+  font-family:
+    "Poppins",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", Georgia, "Times New Roman", serif;
+  color: var(--rc-blue);
+}
+
+/* buttons and form controls */
+.btn {
+  --bs-btn-padding-y: 0.625rem;
+  --bs-btn-padding-x: 1.25rem;
+  --bs-btn-font-size: 0.9375rem;
+  --bs-btn-border-radius: 0.5rem;
+}
+
+.btn-lg {
+  --bs-btn-padding-y: 0.8125rem;
+  --bs-btn-padding-x: 1.5rem;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-border-radius: 0.5rem;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--rc-blue);
+  --bs-btn-border-color: var(--rc-blue);
+  --bs-btn-hover-bg: var(--rc-blue-dark);
+  --bs-btn-hover-border-color: var(--rc-blue-dark);
+  --bs-btn-active-bg: var(--rc-blue-dark);
+  --bs-btn-active-border-color: var(--rc-blue-dark);
+  --bs-btn-disabled-bg: var(--rc-blue);
+  --bs-btn-disabled-border-color: var(--rc-blue);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--rc-blue);
+  --bs-btn-border-color: var(--rc-blue);
+  --bs-btn-hover-bg: var(--rc-blue);
+  --bs-btn-hover-border-color: var(--rc-blue);
+  --bs-btn-active-bg: var(--rc-blue);
+  --bs-btn-active-border-color: var(--rc-blue);
+}
+
+.form-control,
+.form-select {
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.footer .input-group .form-control {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
+}
+
+.footer .input-group .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* colour helpers */
+.text-brand {
+  color: var(--rc-blue) !important;
+}
+.bg-brand {
+  background-color: var(--rc-blue) !important;
+}
+.bg-tint {
+  background-color: var(--rc-tint) !important;
+}
+.bg-tint-2 {
+  background-color: var(--rc-tint-2) !important;
+}
+
+/* navbar */
+.navbar .nav-link.active {
+  color: var(--rc-blue) !important;
+}
+
+/* layout */
+.section {
+  padding: 4.5rem 0;
+}
+.row > * {
+  min-width: 0;
+}
+
+/* icon squares */
+.icon-sq {
+  width: 3.5rem;
+  height: 3.5rem;
+  flex: 0 0 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--rc-blue);
+  border-radius: 0.5rem;
+  color: var(--rc-blue);
+}
+
+.icon-sq-tint {
+  width: 3.5rem;
+  height: 3.5rem;
+  flex: 0 0 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: var(--rc-tint-2);
+  color: var(--rc-blue);
+}
+
+.icon-sq-fill {
+  width: 3.5rem;
+  height: 3.5rem;
+  flex: 0 0 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: var(--rc-blue);
+  color: #fff;
+}
+
+/* hero sections */
+.hero-home {
+  background: var(--rc-tint);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slash {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 72%;
+  height: 34%;
+  background: var(--rc-blue);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.page-hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-height: 19rem;
+}
+
+/* components */
+.card-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2;
+}
+.avatar-ring {
+  border: 4px solid var(--rc-blue);
+}
+.review-avatar {
+  margin-top: -2.25rem;
+}
+.q-row {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.map-band {
+  background: #e9ecef;
+}
+.map-label {
+  font-family: "Segoe Script", "Comic Sans MS", cursive;
+  text-transform: uppercase;
+  color: #6c757d;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.how-arrow {
+  position: absolute;
+  top: 0.25rem;
+  width: 15%;
+  color: var(--rc-blue);
+  pointer-events: none;
+}
+.topic-tile {
+  max-width: 9.5rem;
+  margin-inline: auto;
+}
+
+/* host band */
+.host-visual {
+  position: relative;
+}
+.host-woman {
+  max-height: 18rem;
+}
+
+@media (min-width: 992px) {
+  .host-woman {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -4.5rem;
+    height: calc(100% + 9rem);
+    max-height: none;
+  }
+}
+
+/* footer */
+.footer {
+  background: var(--rc-navy);
+}

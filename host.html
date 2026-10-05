@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Host — Earn With Your Car | RentCar</title>
+    <meta
+      name="description"
+      content="List your idle car on RentCar and earn monthly income with insurance and verified drivers."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2 fw-bold fs-4"
+          href="index.html"
+        >
+          <i class="bi bi-list fs-3 text-brand" aria-hidden="true"></i>
+          <img src="images/car-side.png" alt="" height="30" />
+          <span class="visually-hidden">RentCar</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul
+            class="navbar-nav ms-auto align-items-lg-center gap-lg-3 mt-3 mt-lg-0"
+          >
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="contact.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="help-support.html"
+                >Help &amp; Support</a
+              >
+            </li>
+            <li class="nav-item d-flex gap-3 ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-primary btn-lg" href="host.html"
+                ><i class="bi bi-car-front-fill me-1" aria-hidden="true"></i
+                >Become a Host</a
+              >
+              <a class="btn btn-outline-primary btn-lg" href="contact.html"
+                >Login/Signup</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== Earning calculator hero ===== -->
+    <header class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <form
+              class="bg-tint rounded-3 p-4 shadow-sm"
+              onsubmit="return false;"
+            >
+              <p class="fw-semibold mb-3">
+                How much could you earn by sharing your car?
+              </p>
+              <div class="row g-2 mb-3">
+                <div class="col-6">
+                  <label class="visually-hidden" for="carBrand"
+                    >Car brand</label
+                  >
+                  <select class="form-select form-select-sm" id="carBrand">
+                    <option selected>Mahindra</option>
+                    <option>Maruti Suzuki</option>
+                    <option>Hyundai</option>
+                    <option>Tata</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <label class="visually-hidden" for="carModel"
+                    >Car model</label
+                  >
+                  <select class="form-select form-select-sm" id="carModel">
+                    <option selected>Mahindra</option>
+                    <option>Scorpio</option>
+                    <option>XUV700</option>
+                    <option>Thar</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="visually-hidden" for="address"
+                    >Your address</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Your address"
+                  />
+                </div>
+                <div class="col-12">
+                  <label class="visually-hidden" for="sharingDays"
+                    >Sharing days</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="sharingDays"
+                    placeholder="Sharing days"
+                  />
+                </div>
+              </div>
+              <p class="text-center fw-bold mb-1">Potenial Monthly earning</p>
+              <p class="text-center fw-bold fs-5 mb-3">
+                &#8377;35000 - &#8377;40000
+              </p>
+              <ul class="list-unstyled small text-secondary mb-0">
+                <li class="mb-1">
+                  <i class="bi bi-dot me-1" aria-hidden="true"></i>Assuming your
+                  car's rating to be above 4.7
+                </li>
+                <li>
+                  <i class="bi bi-dot me-1" aria-hidden="true"></i>Earnings
+                  increases over time with better car ratings.
+                </li>
+              </ul>
+            </form>
+          </div>
+          <div class="col-lg-5 text-center">
+            <img
+              src="images/host-hero.png"
+              alt="Host standing beside a listed car"
+              class="img-fluid"
+              style="max-height: 20rem"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== Stats ===== -->
+    <section class="pb-5">
+      <div class="container">
+        <div class="row g-3 text-center">
+          <div class="col-6 col-lg-3">
+            <div class="bg-tint-2 rounded-3 p-4 h-100">
+              <i
+                class="bi bi-hand-index-thumb fs-2 text-brand"
+                aria-hidden="true"
+              ></i>
+              <h2 class="h5 fw-bold mt-2 mb-1">7 million+</h2>
+              <small class="text-secondary">Bookings Served</small>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bg-tint-2 rounded-3 p-4 h-100">
+              <i class="bi bi-car-front fs-2 text-brand" aria-hidden="true"></i>
+              <h2 class="h5 fw-bold mt-2 mb-1">2 Billion+</h2>
+              <small class="text-secondary">Kms driven</small>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bg-tint-2 rounded-3 p-4 h-100">
+              <i
+                class="bi bi-people-fill fs-2 text-brand"
+                aria-hidden="true"
+              ></i>
+              <h2 class="h5 fw-bold mt-2 mb-1">1 million+</h2>
+              <small class="text-secondary">Happy customers</small>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="bg-tint-2 rounded-3 p-4 h-100">
+              <i
+                class="bi bi-geo-alt-fill fs-2 text-brand"
+                aria-hidden="true"
+              ></i>
+              <h2 class="h5 fw-bold mt-2 mb-1">40+</h2>
+              <small class="text-secondary">Cities covered</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Install host app ===== -->
+    <section class="section bg-tint">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h2 class="fw-bold">3 Simple Steps</h2>
+            <p class="fs-5 fw-semibold text-dark mb-0">
+              Start your business with us
+            </p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <span
+              class="icon-circle d-inline-flex align-items-center justify-content-center rounded-circle bg-white text-dark fs-4 mb-3"
+              style="width: 4rem; height: 4rem"
+            >
+              <i class="bi bi-download" aria-hidden="true"></i>
+            </span>
+            <h3 class="h6 fw-bold">Install host app</h3>
+            <p class="small text-secondary mb-3">
+              Become a host by installing the app here
+            </p>
+            <a href="#" class="btn btn-success px-5">Download app</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Host reviews ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 40rem">
+          <h2 class="fw-bold mt-2">What our hosts say</h2>
+        </div>
+        <div class="row g-4 text-center">
+          <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body px-4 pb-4 pt-0">
+                <img
+                  src="images/customer-1.png"
+                  alt=""
+                  class="rounded-circle avatar-ring review-avatar mb-2"
+                  width="64"
+                  height="64"
+                />
+                <h3 class="h6 fw-bold mb-0">Sabita verma</h3>
+                <small class="text-secondary d-block mb-3">Mumbai</small>
+                <p class="small text-secondary mb-0">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body px-4 pb-4 pt-0">
+                <img
+                  src="images/customer-2.png"
+                  alt=""
+                  class="rounded-circle avatar-ring review-avatar mb-2"
+                  width="64"
+                  height="64"
+                />
+                <h3 class="h6 fw-bold mb-0">Maria</h3>
+                <small class="text-secondary d-block mb-3">Delhi</small>
+                <p class="small text-secondary mb-0">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body px-4 pb-4 pt-0">
+                <img
+                  src="images/customer-3.png"
+                  alt=""
+                  class="rounded-circle avatar-ring review-avatar mb-2"
+                  width="64"
+                  height="64"
+                />
+                <h3 class="h6 fw-bold mb-0">Phoeby</h3>
+                <small class="text-secondary d-block mb-3">Bengaluru</small>
+                <p class="small text-secondary mb-0">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Any question ===== -->
+    <section class="section pt-2">
+      <div class="container">
+        <h2 class="fw-bold mb-4">Any Question?</h2>
+        <div class="accordion accordion-flush" id="hostAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed small fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#hfaq1"
+                aria-expanded="false"
+                aria-controls="hfaq1"
+              >
+                Do I need to meet the guest of my car ?
+              </button>
+            </h3>
+            <div
+              id="hfaq1"
+              class="accordion-collapse collapse"
+              data-bs-parent="#hostAccordion"
+            >
+              <div class="accordion-body small text-secondary">
+                Only if you choose hand-over; keyless pickup and lockbox options
+                are available.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed small fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#hfaq2"
+                aria-expanded="false"
+                aria-controls="hfaq2"
+              >
+                How will I get paid?
+              </button>
+            </h3>
+            <div
+              id="hfaq2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#hostAccordion"
+            >
+              <div class="accordion-body small text-secondary">
+                Earnings are transferred weekly to your verified bank account.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed small fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#hfaq3"
+                aria-expanded="false"
+                aria-controls="hfaq3"
+              >
+                How much will I earn?
+              </button>
+            </h3>
+            <div
+              id="hfaq3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#hostAccordion"
+            >
+              <div class="accordion-body small text-secondary">
+                It depends on your car model, city and sharing days — use the
+                calculator above.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed small fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#hfaq4"
+                aria-expanded="false"
+                aria-controls="hfaq4"
+              >
+                How is the price of my car decided?
+              </button>
+            </h3>
+            <div
+              id="hfaq4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#hostAccordion"
+            >
+              <div class="accordion-body small text-secondary">
+                You set your own daily price; we suggest a range from similar
+                listings.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed small fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#hfaq5"
+                aria-expanded="false"
+                aria-controls="hfaq5"
+              >
+                Why are safety devices installed?
+              </button>
+            </h3>
+            <div
+              id="hfaq5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#hostAccordion"
+            >
+              <div class="accordion-body small text-secondary">
+                They protect your car with tracking and immobiliser support on
+                every trip.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed small fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#hfaq6"
+                aria-expanded="false"
+                aria-controls="hfaq6"
+              >
+                What happened if my car gets challans?
+              </button>
+            </h3>
+            <div
+              id="hfaq6"
+              class="accordion-collapse collapse"
+              data-bs-parent="#hostAccordion"
+            >
+              <div class="accordion-body small text-secondary">
+                Traffic challans during a trip are charged to the renter
+                automatically.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Download app ===== -->
+    <section class="section bg-tint">
+      <div class="container">
+        <h2 class="fw-bold">Download our app</h2>
+        <p class="fs-5 fw-semibold text-dark mb-4">
+          Start your business with us
+        </p>
+        <div class="d-flex flex-column flex-sm-row gap-3">
+          <a
+            href="#"
+            class="btn btn-dark d-inline-flex align-items-center gap-2 px-3"
+          >
+            <i class="bi bi-google-play fs-5" aria-hidden="true"></i>
+            <span class="text-start small lh-sm"
+              >GET IT ON<br />Google Play</span
+            >
+          </a>
+          <a
+            href="#"
+            class="btn btn-dark d-inline-flex align-items-center gap-2 px-3"
+          >
+            <i class="bi bi-apple fs-5" aria-hidden="true"></i>
+            <span class="text-start small lh-sm"
+              >Download on the<br />App Store</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer text-white-50 pt-5">
+      <div class="container">
+        <div class="row g-4 pb-4">
+          <div class="col-12 col-lg-3">
+            <img src="images/car-watermark.png" alt="" width="72" />
+            <p class="small mt-3 mb-0">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h3 class="h6 fw-bold text-white mb-3">Office</h3>
+            <p class="small mb-2">
+              106 Doyers St<br />8,Alpha 2,<br />Greater Noida
+            </p>
+            <p class="small mb-2">
+              <i
+                class="bi bi-telephone-fill me-2 text-brand"
+                aria-hidden="true"
+              ></i
+              >+123456789
+            </p>
+            <p class="small mb-0">
+              <i
+                class="bi bi-envelope-fill me-2 text-brand"
+                aria-hidden="true"
+              ></i
+              >name1234@gmail.com
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h3 class="h6 fw-bold text-white mb-3">Links</h3>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2">
+                <a
+                  class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+                  href="index.html#fleet"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+                  href="host.html"
+                  >Pricing</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+                  href="about.html"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h3 class="h6 fw-bold text-white mb-3">Newsletter</h3>
+            <label class="visually-hidden" for="newsEmail">Email</label>
+            <form
+              class="input-group"
+              style="max-width: 19.5rem"
+              onsubmit="return false;"
+            >
+              <input
+                id="newsEmail"
+                class="form-control"
+                type="email"
+                placeholder="Send Email"
+              />
+              <button class="btn btn-light" type="submit">Subscribe</button>
+            </form>
+            <div class="d-flex gap-3 mt-3 fs-5">
+              <a class="link-light" href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a class="link-light" href="#" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a class="link-light" href="#" aria-label="Twitter"
+                ><i class="bi bi-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="border-top border-secondary-subtle py-3 small text-center">
+          2023 conversion. ALL RIGHTS RESERVED |
+          <a
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            href="#"
+            >Terms and Conditions</a
+          >
+          |
+          <a
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            href="#"
+            >Privacy Policy</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

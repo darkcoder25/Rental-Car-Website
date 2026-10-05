@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact us — RentCar</title>
+    <meta
+      name="description"
+      content="Contact the RentCar team — office, phone, email and enquiry form."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2 fw-bold fs-4"
+          href="index.html"
+        >
+          <i class="bi bi-list fs-3 text-brand" aria-hidden="true"></i>
+          <img src="images/car-side.png" alt="" height="30" />
+          <span class="visually-hidden">RentCar</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul
+            class="navbar-nav ms-auto align-items-lg-center gap-lg-3 mt-3 mt-lg-0"
+          >
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-semibold"
+                aria-current="page"
+                href="contact.html"
+                >Contact us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="help-support.html"
+                >Help &amp; Support</a
+              >
+            </li>
+            <li class="nav-item d-flex gap-3 ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-primary btn-lg" href="host.html"
+                ><i class="bi bi-car-front-fill me-1" aria-hidden="true"></i
+                >Become a Host</a
+              >
+              <a class="btn btn-outline-primary btn-lg" href="contact.html"
+                >Login/Signup</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== Page hero ===== -->
+    <header
+      class="page-hero text-white text-center"
+      style="
+        background-image: url(&quot;images/contact-hero.jpg&quot;);
+        background-position: center 68%;
+      "
+    >
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
+      ></div>
+      <div class="container position-relative py-5">
+        <div class="py-5">
+          <h1 class="display-4 fw-bold text-white">Contact Us</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== Contact information ===== -->
+    <section class="section pb-4">
+      <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 40rem">
+          <h2 class="fw-bold mt-2">Contact Information</h2>
+        </div>
+        <div class="row g-4 text-center">
+          <div class="col-12 col-md-4">
+            <span class="icon-sq mb-3"
+              ><i class="bi bi-telephone-fill fs-5" aria-hidden="true"></i
+            ></span>
+            <small class="d-block text-secondary"
+              >Call us for your next Ride</small
+            >
+            <span class="fw-bold small">+123456789</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <span class="icon-sq mb-3"
+              ><i class="bi bi-envelope-fill fs-5" aria-hidden="true"></i
+            ></span>
+            <small class="d-block text-secondary">Mail us at</small>
+            <span class="fw-bold small">name1234@gmail.com</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <span class="icon-sq mb-3"
+              ><i class="bi bi-geo-alt-fill fs-5" aria-hidden="true"></i
+            ></span>
+            <small class="d-block text-secondary">Office Location</small>
+            <span class="fw-bold small">Alpha 2, Greater Noida ,India</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Get in touch ===== -->
+    <section class="section pt-2">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <h2 class="fw-bold">Get in Touch</h2>
+            <p class="small text-secondary mt-3 mb-0">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <form
+              class="bg-tint rounded-3 p-4 p-lg-4"
+              id="contactForm"
+              novalidate
+            >
+              <div class="mb-3">
+                <label class="visually-hidden" for="fullName">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Name"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="mb-3">
+                <label class="visually-hidden" for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="visually-hidden" for="phone">Phone no.</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Phone no."
+                  pattern="[0-9+ -]{10,15}"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid phone number.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="visually-hidden" for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">
+                  Please write a short message.
+                </div>
+              </div>
+              <div class="text-end">
+                <button class="btn btn-primary px-5" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== World map ===== -->
+    <section class="pb-0">
+      <div class="map-band position-relative" style="height: 22rem">
+        <img
+          src="images/world-map.png"
+          alt="World map with the ocean gyres labelled"
+          class="w-100 h-100"
+          style="object-fit: cover"
+        />
+        <span class="map-label position-absolute" style="top: 4%; left: 58%"
+          >Arktik Ocean</span
+        >
+        <span class="map-label position-absolute" style="top: 38%; left: 12%"
+          >North Pacific Gyre</span
+        >
+        <span class="map-label position-absolute" style="top: 40%; left: 47%"
+          >North Atlantic Gyre</span
+        >
+        <span class="map-label position-absolute" style="bottom: 12%; left: 16%"
+          >South Pacific Gyre</span
+        >
+        <span class="map-label position-absolute" style="bottom: 10%; left: 50%"
+          >South Atlantik Gyre</span
+        >
+        <span class="map-label position-absolute" style="bottom: 12%; right: 6%"
+          >Indian Ocean Gyre</span
+        >
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer text-white-50 pt-5">
+      <div class="container">
+        <div class="row g-4 pb-4">
+          <div class="col-12 col-lg-3">
+            <img src="images/car-watermark.png" alt="" width="72" />
+            <p class="small mt-3 mb-0">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h3 class="h6 fw-bold text-white mb-3">Office</h3>
+            <p class="small mb-2">
+              106 Doyers St<br />8,Alpha 2,<br />Greater Noida
+            </p>
+            <p class="small mb-2">
+              <i
+                class="bi bi-telephone-fill me-2 text-brand"
+                aria-hidden="true"
+              ></i
+              >+123456789
+            </p>
+            <p class="small mb-0">
+              <i
+                class="bi bi-envelope-fill me-2 text-brand"
+                aria-hidden="true"
+              ></i
+              >name1234@gmail.com
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h3 class="h6 fw-bold text-white mb-3">Links</h3>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2">
+                <a
+                  class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+                  href="index.html#fleet"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+                  href="host.html"
+                  >Pricing</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+                  href="about.html"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h3 class="h6 fw-bold text-white mb-3">Newsletter</h3>
+            <label class="visually-hidden" for="newsEmail">Email</label>
+            <form
+              class="input-group"
+              style="max-width: 19.5rem"
+              onsubmit="return false;"
+            >
+              <input
+                id="newsEmail"
+                class="form-control"
+                type="email"
+                placeholder="Send Email"
+              />
+              <button class="btn btn-light" type="submit">Subscribe</button>
+            </form>
+            <div class="d-flex gap-3 mt-3 fs-5">
+              <a class="link-light" href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a class="link-light" href="#" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a class="link-light" href="#" aria-label="Twitter"
+                ><i class="bi bi-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="border-top border-secondary-subtle py-3 small text-center">
+          2023 conversion. ALL RIGHTS RESERVED |
+          <a
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            href="#"
+            >Terms and Conditions</a
+          >
+          |
+          <a
+            class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
+            href="#"
+            >Privacy Policy</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const form = document.getElementById("contactForm");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        form.classList.add("was-validated");
+        if (form.checkValidity()) {
+          form.reset();
+          form.classList.remove("was-validated");
+          alert("Thank you! Your message has been sent.");
+        }
+      });
+    </script>
+  </body>
+</html>
